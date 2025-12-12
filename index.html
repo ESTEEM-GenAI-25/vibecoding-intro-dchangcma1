@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Military Branch Decision Support Tool</title>
+
+  <!-- Basic styling -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: #1a2a6c;
+      background: linear-gradient(135deg, #1a2a6c, #2a6cb0);
+      padding: 30px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1em;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      border-left: 5px solid #1a2a6c;
+      padding-left: 10px;
+    }
+
+    .question {
+      margin-bottom: 20px;
+    }
+
+    .question label {
+      font-weight: bold;
+    }
+
+    textarea, select, input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    button {
+      background: #1a2a6c;
+      color: white;
+      padding: 12px 20px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    button:hover {
+      background: #27408b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      color: #555;
+    }
+
+    .links a {
+      display: block;
+      margin-top: 6px;
+      color: #1a2a6c;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Military Branch Decision Support Tool</h1>
+    <p>Helping you understand which U.S. military branch fits your goals, lifestyle, and interests.</p>
+  </header>
+
+  <div class="container">
+    <h2>About This Tool</h2>
+    <p>
+      This interactive tool uses structured questions and an AI-powered scoring model to help users understand 
+      which branch of the U.S. military may be the best match for their motivations, personality, and career preferences.
+    </p>
+
+    <div class="links">
+      <strong>Project Documentation:</strong>
+      <a href="README.md">📘 README</a>
+      <a href="docs/PRD.md">📄 Product Requirements Document (PRD)</a>
+      <a href="data/branch_profiles.json">📊 Branch Profiles Dataset</a>
+    </div>
+
+    <hr style="margin: 40px 0;">
+
+    <h2>Try the Questionnaire</h2>
+
+    <div class="question">
+      <label for="motivation">1. What is your primary motivation for considering military service?</label>
+      <textarea id="motivation" rows="3" placeholder="Example: education benefits, career stability, adventure, service…"></textarea>
+    </div>
+
+    <div class="question">
+      <label for="careers">2. What types of career fields interest you?</label>
+      <select id="careers">
+        <option value="">Select one...</option>
+        <option value="technical">Technical / Cyber</option>
+        <option value="medical">Medical Fields</option>
+        <option value="combat">Combat Arms</option>
+        <option value="aviation">Aviation / Piloting</option>
+        <option value="logistics">Logistics / Support</option>
+        <option value="intelligence">Intelligence / Analysis</option>
+        <option value="engineering">Engineering</option>
+      </select>
+    </div>
+
+    <div class="question">
+      <label for="lifestyle">3. What lifestyle or work environment do you prefer?</label>
+      <select id="lifestyle">
+        <option value="">Select one...</option>
+        <option value="structured">Highly structured and disciplined</option>
+        <option value="technical">Technical / innovation-focused</option>
+        <option value="sea">Sea-based or maritime environment</option>
+        <option value="fast-paced">Fast-paced & expeditionary</option>
+        <option value="predictable">Predictable & stable schedule</option>
+      </select>
+    </div>
+
+    <div class="question">
+      <label for="risk">4. How comfortable are you with high-risk or physically intense environments?</label>
+      <select id="risk">
+        <option value="">Select one...</option>
+        <option value="low">Not very</option>
+        <option value="medium">Somewhat comfortable</option>
+        <option value="high">Very comfortable</option>
+      </select>
+    </div>
+
+    <button onclick="alert('This is a placeholder. In the full build, this will send your inputs into the AI scoring engine and generate a branch recommendation.')">
+      Generate Recommendation
+    </button>
+  </div>
+
+  <footer>
+    &copy; 2025 Military Branch Decision Support Project — Built with AI and Human Oversight
+  </footer>
+
+</body>
+</html>
