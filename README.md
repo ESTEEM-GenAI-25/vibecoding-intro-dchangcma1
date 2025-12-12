@@ -1,3 +1,4 @@
+https://aistudio.google.com/apps/drive/1Lpr_xlBKOvYq98Ujkt8k5IOjZDwaGyAR?showAssistant=true&resourceKey=&showPreview=true
 # Determining Which Military Branch of Service to Join — AI Decision Support Tool
 
 This repository contains the full Product Requirements Document (PRD), specifications, and architecture for an AI-powered decision-support tool that helps prospective service members understand which branch of the U.S. military may be the best fit for their goals, personality, lifestyle preferences, and long-term career path.
@@ -60,4 +61,5 @@ The PRD covers:
 ---
 
 ## 🏗️ Technical Architecture
+
 
